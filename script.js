@@ -1,0 +1,34 @@
+async function loadWords() {
+    const response = await fetch("words.json");
+    const words = await response.json();
+
+    return words;
+}
+
+async function searchWords() {
+    const words = await loadWords();
+
+    const finalSelect = document.getElementById("final");
+    const result = document.getElementById("results");
+
+    const selectedFinal = finalSelect.value;
+
+    const matchedWords = words.filter(function(word) {
+        return word.final === selectedFinal;
+    });
+
+    if (matchedWords.length === 0) {
+        result.innerHTML = "<p>找不到符合的詞彙。</p>";
+        return;
+    }
+
+    result.innerHTML = "";
+
+    matchedWords.forEach(function(word) {
+        const item = document.createElement("div");
+
+        item.textContent = word.word;
+
+        result.appendChild(item);
+    });
+}
