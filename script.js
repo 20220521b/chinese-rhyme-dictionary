@@ -19,6 +19,7 @@ async function searchWords() {
     const selectedFinal = finalSelect.value;
     const selectedTone = toneSelect.value;
     const selectedPartOfSpeech = partOfSpeechSelect.value;
+    console.log("選擇的詞性：", selectedPartOfSpeech);
 
     const result = document.getElementById("results");
 
