@@ -1,6 +1,11 @@
 async function loadWords() {
     const response = await fetch("words.json");
+
+    console.log("JSON 請求成功：", response.ok);
+
     const words = await response.json();
+
+    console.log("讀到的詞彙：", words);
 
     return words;
 }
