@@ -19,6 +19,12 @@ async function searchWords() {
     const selectedFinal = finalSelect.value;
     const selectedTone = toneSelect.value;
     const selectedPartOfSpeech = partOfSpeechSelect.value;
+    const selectedStyles =
+        Array.from(
+            document.querySelectorAll("#styles input:checked")
+        ).map(function(checkbox) {
+            return checkbox.value;
+        });
 
     const result = document.getElementById("results");
 
@@ -51,13 +57,20 @@ async function searchWords() {
             selectedPartOfSpeech === "" ||
             selectedPartOfSpeech === "all" ||
             word.partOfSpeech.includes(selectedPartOfSpeech);
+
+        const styleMatch =
+            selectedStyles.length === 0 ||
+            selectedStyles.every(function(style) {
+                return word.styles.includes(style);
+            });
         
         return (
             initialMatch &&
             medialMatch &&
             finalMatch &&
             toneMatch &&
-            partOfSpeechMatch
+            partOfSpeechMatch &&
+            styleMatch
         );
     });
 
