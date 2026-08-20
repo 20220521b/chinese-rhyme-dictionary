@@ -17,6 +17,10 @@ async function searchWords() {
     const selectedMedial = medialSelect.value;
     const selectedFinal = finalSelect.value;
     const selectedTone = toneSelect.value;
+    console.log("聲母：", selectedInitial);
+    console.log("介音：", selectedMedial);
+    console.log("韻母：", selectedFinal);
+    console.log("聲調：", selectedTone);
 
     const result = document.getElementById("results");
 
