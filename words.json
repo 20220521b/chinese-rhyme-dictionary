@@ -1,6 +1,8 @@
 [
     {
         "word": "微笑",
+        "partOfSpeech": ["動詞", "名詞"],
+        "styles": ["正面", "溫暖"],
         "syllables": [
             {
                 "initial": "ㄨ",
@@ -15,7 +17,7 @@
                 "tone": 4
             }
         ]
-    },
+    }
     {
         "word": "破曉",
         "syllables": [
