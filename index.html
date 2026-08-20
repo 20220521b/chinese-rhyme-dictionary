@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>中文押韻字典</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -49,22 +50,22 @@
     </select>
 
     <h4>選擇韻母</h4>
-
-    <select>
-        <option>請選擇韻母</option>
-        <option>ㄚ</option>
-        <option>ㄛ</option>
-        <option>ㄜ</option>
-        <option>ㄝ</option>
-        <option>ㄞ</option>
-        <option>ㄟ</option>
-        <option>ㄠ</option>
-        <option>ㄡ</option>
-        <option>ㄢ</option>
-        <option>ㄣ</option>
-        <option>ㄤ</option>
-        <option>ㄥ</option>
-        <option>ㄦ</option>
+ 
+    <select id="final">
+        <option value="">請選擇韻母</option>
+        <option value="ㄚ">ㄚ</option>
+        <option value="ㄛ">ㄛ</option>
+        <option value="ㄜ">ㄜ</option>
+        <option value="ㄝ">ㄝ</option>
+        <option value="ㄞ">ㄞ</option>
+        <option value="ㄟ">ㄟ</option>
+        <option value="ㄠ">ㄠ</option>
+        <option value="ㄡ">ㄡ</option>
+        <option value="ㄢ">ㄢ</option>
+        <option value="ㄣ">ㄣ</option>
+        <option value="ㄤ">ㄤ</option>
+        <option value="ㄥ">ㄥ</option>
+        <option value="ㄦ">ㄦ</option>
     </select>
 
     <h4>選擇聲調</h4>
@@ -80,7 +81,8 @@
     </select>
 
 
-    <button>搜尋</button>
+    <button onclick="searchWords()">搜尋</button>
+    <div id="results"></div>
 
 </body>
 </html>
