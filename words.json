@@ -1,0 +1,72 @@
+[
+    {
+        "word": "微笑",
+        "initial": "ㄒ",
+        "medial": "ㄧ",
+        "final": "ㄠ",
+        "tone": 4
+    },
+    {
+        "word": "破曉",
+        "initial": "ㄒ",
+        "medial": "ㄧ",
+        "final": "ㄠ",
+        "tone": 3
+    },
+    {
+        "word": "燃燒",
+        "initial": "ㄕ",
+        "medial": "ㄧ",
+        "final": "ㄠ",
+        "tone": 1
+    },
+    {
+        "word": "海嘯",
+        "initial": "ㄒ",
+        "medial": "ㄧ",
+        "final": "ㄠ",
+        "tone": 4
+    },
+    {
+        "word": "笑",
+        "initial": "ㄒ",
+        "medial": "ㄧ",
+        "final": "ㄠ",
+        "tone": 4
+    },
+    {
+        "word": "開始",
+        "initial": "ㄕ",
+        "medial": "",
+        "final": "ㄞ",
+        "tone": 3
+    },
+    {
+        "word": "老師",
+        "initial": "ㄕ",
+        "medial": "",
+        "final": "ㄧ",
+        "tone": 1
+    },
+    {
+        "word": "可是",
+        "initial": "ㄕ",
+        "medial": "",
+        "final": "ㄜ",
+        "tone": 4
+    },
+    {
+        "word": "但是",
+        "initial": "ㄕ",
+        "medial": "",
+        "final": "ㄜ",
+        "tone": 4
+    },
+    {
+        "word": "青春",
+        "initial": "ㄔ",
+        "medial": "ㄨ",
+        "final": "ㄣ",
+        "tone": 1
+    }
+]
