@@ -12,11 +12,13 @@ async function searchWords() {
     const medialSelect = document.getElementById("medial");
     const finalSelect = document.getElementById("final");
     const toneSelect = document.getElementById("tone");
-
+    const partOfSpeechSelect = document.getElementById("partOfSpeech");
+    
     const selectedInitial = initialSelect.value;
     const selectedMedial = medialSelect.value;
     const selectedFinal = finalSelect.value;
     const selectedTone = toneSelect.value;
+    const selectedPartOfSpeech = partOfSpeechSelect.value;
 
     const result = document.getElementById("results");
 
@@ -45,11 +47,17 @@ async function searchWords() {
             selectedTone === "all" ||
             String(lastSyllable.tone) === selectedTone;
 
+        const partOfSpeechMatch =
+            selectedPartOfSpeech === "" ||
+            selectedPartOfSpeech === "all" ||
+            word.partOfSpeech.includes(selectedPartOfSpeech);
+        
         return (
             initialMatch &&
             medialMatch &&
             finalMatch &&
-            toneMatch
+            toneMatch &&
+            partOfSpeechMatch
         );
     });
 
