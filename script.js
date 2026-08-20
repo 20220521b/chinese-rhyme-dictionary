@@ -14,7 +14,8 @@ async function searchWords() {
     const selectedFinal = finalSelect.value;
 
     const matchedWords = words.filter(function(word) {
-        return word.final === selectedFinal;
+        const lastSyllable = word.syllables[word.syllables.length - 1];
+        return lastSyllable.final === selectedFinal;
     });
 
     if (matchedWords.length === 0) {
