@@ -20,6 +20,8 @@
     },
     {
         "word": "破曉",
+        "partOfSpeech": ["名詞"],
+        "styles": ["黎明", "明亮", "希望"],
         "syllables": [
             {
                 "initial": "ㄆ",
@@ -37,6 +39,8 @@
     },
     {
         "word": "海嘯",
+        "partOfSpeech": ["名詞"],
+        "styles": ["自然", "災難", "強烈"],
         "syllables": [
             {
                 "initial": "ㄏ",
