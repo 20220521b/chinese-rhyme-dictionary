@@ -5,6 +5,13 @@ async function loadWords() {
     return words;
 }
 
+function isStrictRhyme(targetSyllable, wordSyllable) {
+    return (
+        targetSyllable.medial === wordSyllable.medial &&
+        targetSyllable.final === wordSyllable.final
+    );
+}
+
 async function searchWords() {
     const words = await loadWords();
 
